@@ -1,0 +1,348 @@
+$base-color: #F8981D;
+$text-color: #404040;
+$form-color: #F0F4FD;
+$gray-color: #ECECEC;
+$gray-text: rgb(206, 202, 202);
+$dark-blue: #06296C;
+$green-color: #00AA63;
+$text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+$card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.6s ease-in-out;
+    // font-family: Poppins;
+    // font-style: normal;
+
+    button:focus,
+    button:active,
+    button:hover {
+        outline: none;
+    }
+
+    input:focus,
+    input:active,
+    input:hover {
+        outline: none;
+    }
+
+
+}
+
+.relative {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.txt-9 {
+    font-size: 9px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.txt-11 {
+    font-size: 11px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.txt-14 {
+    font-size: 14px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.txt-16 {
+    font-size: 16px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.txt-20 {
+    font-size: 20px;
+    color: $text-color;
+    font-weight: bold;
+}
+
+.txt-link {
+    font-size: 11px;
+    color: $base-color;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.h2 {
+    // font-size: 11px;
+    color: $text-color;
+    font-weight: 300;
+}
+
+.bg-gray {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #ECECEC;
+    height: 50vh auto;
+    padding-bottom: 50px;
+}
+
+
+.btn-contiune:hover {
+    background: rgb(226, 135, 15);
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.6s ease-in;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.bars {
+    width: 2px;
+    height: 60px;
+    background: #fff;
+}
+
+.breadcrum {
+    width: 100%;
+
+    li {
+        margin: 0px 5px;
+        display: inline-block;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $base-color;
+        font-size: 11px;
+    }
+
+    a.active {
+        color: $text-color;
+    }
+}
+
+
+.aiki-navbar {
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+
+@media only screen and (min-width : 280px) and (max-width : 565px) {
+
+    /*--- Mobile landscape ---*/
+    .header-top .cs-end {
+        position: relative !important;
+        top: 0px;
+        right: 0px;
+        margin-right: 0px;
+    }
+
+    .mb-hide {
+        display: none;
+        visibility: hidden;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+    }
+
+    //header-intro
+    .header-intro {
+        background-image: url('/images/header-bg.png');
+        background-size: cover;
+        background-position: initial;
+        background-blend-mode: lighten, normal;
+        height: 70vh;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .centralize {
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            top: 20vh;
+
+            .cs-header-form {
+                background: white;
+                height: 250px;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: $card-shadow;
+
+                .cs-form-contorl {
+                    width: 100% !important;
+                    height: 50px;
+                    background: $gray-color;
+                    color: $gray-text;
+                    outline: none !important;
+                }
+
+                .cs-header-intro-form-btn {
+                    border: none;
+                    outline: none;
+                    background: $base-color !important;
+                    color: #fff !important;
+                    width: 150px !important;
+                    height: 50px !important;
+                    border-radius: 5px;
+
+
+                }
+            }
+
+        }
+
+        .text-intro {
+            color: $base-color;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .text-intro-2 {
+            color: $form-color;
+            font-size: 35px;
+            font-weight: bold;
+            text-shadow: $text-shadow;
+        }
+
+    }
+
+    .service-underlay {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background: #ECECEC;
+        height: 100vh auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        z-index: -1;
+
+        .service-list {
+            position: relative;
+            top: -10px;
+            left: 00px;
+            background: #fff;
+            border-radius: 5px;
+            width: 600px auto;
+            text-decoration: none !important;
+            color: #404040;
+            // height: 15vh;
+            padding: 10px 0px auto;
+            box-shadow: $card-shadow;
+        }
+
+    }
+
+    .service-filter {
+        background: #ECECEC;
+        // height:550vh;
+        padding: auto;
+        padding-bottom: 100px;
+    }
+
+
+
+    .service-filter-header {
+
+
+
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            text-align: left;
+            display: block !important;
+        }
+
+        a.active {
+            border-color: none;
+            border: none !important;
+        }
+    }
+
+
+    .btn-contiune {
+        position: absolute;
+        bottom: -40px;
+        left: 20px;
+        background: $base-color;
+        color: #fff;
+        width: 150px;
+        transition: all 0.5s ease;
+
+    }
+
+
+
+
+    .customer-review-card {
+        position: relative;
+        top: 0;
+        left: 0px !important;
+
+
+
+    }
+
+
+
+
+    .frequent-questions-card {
+        position: relative;
+        top: 0;
+        left: 0px !important;
+
+    }
+
+    .how-it-works-card {
+        position: relative;
+        top: 0;
+        left: 0px !important;
+
+        padding: 20px;
+        // width: 70%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 565px) and (max-width : 1024px) {
+
+    /*--- Small tablet landscape ---*/
+
+}

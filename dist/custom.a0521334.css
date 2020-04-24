@@ -81,6 +81,20 @@
   transition: all 0.5s ease;
 }
 
+.txt-link-login {
+  color: #F8981D;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.txt-signup {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
 .h2 {
   color: #404040;
   font-weight: 300;
@@ -146,6 +160,54 @@
 }
 .breadcrum a.active {
   color: #404040;
+}
+
+.modal-card {
+  width: 90%;
+  left: 50px;
+}
+.modal-card .wizard-steps .step-1 {
+  padding: 50px 30px;
+}
+.modal-card .wizard-steps .step-1 h3 {
+  font-size: 28px;
+  font-weight: lighter;
+}
+.modal-card .wizard-steps .step-1 p {
+  font-size: 11px;
+  font-weight: lighter;
+}
+.modal-card .wizard-steps .step-1 .btn-step1-continue {
+  width: 100%;
+  background: #F8981D;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 0px !important;
+}
+
+.modal-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: inherit;
+  width: 93%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  padding: 20px;
+}
+
+.modal-card .overlay {
+  opacity: 1;
 }
 
 .aiki-navbar {
@@ -469,6 +531,7 @@
   position: relative;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 .service-page .service-page-hero .service-page-introText {
   color: #fff;
@@ -477,6 +540,21 @@
 .service-page .service-page-hero .service-page-desc {
   width: 73%;
   color: #F8981D;
+}
+
+.service-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 1;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  padding: 20px;
 }
 
 .service-filter {
@@ -645,6 +723,25 @@
   top: 0;
   left: 100px;
   padding: 20px;
+}
+
+.auth {
+  height: 100vh;
+  background: #ECECEC;
+}
+.auth .form-control {
+  background: none;
+  border: 0px;
+  border-radius: 0px;
+  border-color: #404040;
+  border-bottom: 1px solid #404040;
+  outline: none !important;
+}
+.auth .btn-signUp {
+  width: 100%;
+  background: #F8981D;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=/custom.a0521334.css.map */

@@ -83,6 +83,19 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
     text-decoration: none;
     transition: all 0.5s ease;
 }
+.txt-link-login {
+   
+    color: $base-color;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.txt-signup {
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
 
 .h2 {
     // font-size: 11px;
@@ -92,10 +105,11 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
 
 
 
-.case{
+.case {
     position: relative;
     top: 20px;
     padding: 50px 0px;
+
     .on-demand-svg {
         width: 100%;
     }
@@ -158,6 +172,73 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
         color: $text-color;
     }
 }
+
+
+
+.modal-card {
+
+    width: 90%;
+    left: 50px;
+
+
+
+    .wizard-steps {
+        .step-1 {
+            padding: 50px 30px;
+
+            h3 {
+                font-size: 28px;
+                font-weight: lighter;
+            }
+
+            p {
+                font-size: 11px;
+                font-weight: lighter;
+            }
+
+            .btn-step1-continue {
+                width: 100%;
+                background: $base-color;
+                color: #fff;
+                //    width: 150px;
+                transition: all 0.5s ease;
+                border-radius: 0px !important;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+.modal-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: inherit;
+    width: 93%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, .6);
+    color: #fff !important;
+    padding: 20px;
+}
+
+.modal-card .overlay {
+    opacity: 1;
+}
+
 
 
 .aiki-navbar {
@@ -583,11 +664,15 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
     position: relative;
     top: 0;
     left: 0;
+    z-index: 1;
 
     .service-page-hero {
+
         .service-page-introText {
             color: #fff;
             margin-top: 80px;
+
+
         }
 
         .service-page-desc {
@@ -597,6 +682,23 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
 
         }
     }
+
+}
+
+.service-page .overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: inherit;
+    width: inherit;
+    opacity: 1;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, .6);
+    color: #fff !important;
+    padding: 20px;
 
 }
 
@@ -729,54 +831,54 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
     border-radius: 5px;
     padding-bottom: 20px;
 
-    .customer-review-card{
+    .customer-review-card {
         position: relative;
         top: 0;
         left: 100px;
-        
+
         // width: 60%;
 
-        .customer-review-body{
+        .customer-review-body {
             padding: 10px 30px;
             margin: 5px;
-    
-        
+
+
             .customer-review-rating {
-    
+
                 background: $base-color;
                 width: 70px;
                 height: auto;
                 border-radius: 5px;
                 margin: 10px;
                 margin-left: 0px;
-        
+
                 span {
                     display: block;
                 }
-        
+
                 span:nth-child(1) {
                     font-size: 30px;
                     color: $text-color;
                     font-weight: bold;
                 }
             }
-        
+
             p {
                 position: relative;
                 top: 10px;
                 left: 10px;
             }
-        }   
+        }
 
     }
 
-    
 
-   
+
+
 
 }
 
-.frequent-questions{
+.frequent-questions {
     position: relative;
     top: 30px;
     left: 6%;
@@ -787,21 +889,21 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
     border-radius: 5px;
     padding-bottom: 20px;
 
-    .frequent-questions-card{
+    .frequent-questions-card {
         position: relative;
         top: 0;
         left: 100px;
 
 
-        .ques-txt{
+        .ques-txt {
             font-size: 16px;
-            color:$text-color;
+            color: $text-color;
             font-weight: lighter;
         }
     }
 }
 
-.how-it-works{
+.how-it-works {
     position: relative;
     top: 50px;
     left: 6%;
@@ -810,13 +912,36 @@ $card-shadow: 0px 2px 10px rgba(176, 176, 176, 0.25);
     height: 30vh auto;
     box-shadow: $card-shadow;
     border-radius: 5px;
-    padding-bottom: 20px; 
-    
-    .how-it-works-card{
+    padding-bottom: 20px;
+
+    .how-it-works-card {
         position: relative;
         top: 0;
         left: 100px;
-        padding:20px;
+        padding: 20px;
         // width: 70%;
     }
+}
+
+.auth{
+    height: 100vh;
+    background: #ECECEC;
+    
+    .form-control{
+        background: none;
+        border: 0px;
+        border-radius: 0px;
+        border-color: $text-color;
+        border-bottom: 1px solid $text-color;
+        outline: none !important;
+    }
+    .btn-signUp{
+        width: 100%;
+        background: $base-color;
+        color: #fff;
+    //    font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+
 }
